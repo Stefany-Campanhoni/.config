@@ -1,0 +1,196 @@
+{
+  // Editor
+  "editor.fontFamily": "Hasklug Nerd Font Mono",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.padding.top": 0,
+  "editor.padding.bottom": 10,
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.renderLineHighlight": "gutter",
+  "editor.smoothScrolling": true,
+  "editor.formatOnPaste": true,
+  "editor.autoClosingQuotes": "always",
+  "editor.accessibilitySupport": "off",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.rulers": [80, 120],
+  "editor.stickyScroll.enabled": true,
+
+  // Workbench
+  "workbench.activityBar.location": "hidden",
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "symbols",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true,
+  "workbench.sideBar.location": "right",
+  "workbench.layoutControl.enabled": false,
+
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, package-lock*",
+    "tailwind.config.js": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "explorer.fileNesting.enabled": true,
+
+  // Window
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+
+  // Terminal
+  "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.gpuAcceleration": "off",
+
+  // Apc
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 48,
+    "itemMargin": 8,
+    "itemSize": 32
+  },
+  "apc.electron": {
+    "titleBarStyle": "hidden"
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.font.family": "Roboto",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;",
+    ".split-view-view": ""
+  },
+
+  // Vim
+  "vim.leader": "<space>",
+  "vim.highlightedyank.enable": true,
+  "vim.useCtrlKeys": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "b", "d"],
+      "commands": [":bd"],
+      "silent": true
+    },
+    {
+      "before": ["leader", "b", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "silent": true
+    },
+    {
+      "before": ["leader", "l", "l"],
+      "commands": ["workbench.view.explorer"],
+      "silent": true
+    },
+    {
+      "before": ["[", "b"],
+      "commands": ["workbench.action.nextEditor"],
+      "silent": true
+    },
+    {
+      "before": ["]", "b"],
+      "commands": ["workbench.action.navigateBack"],
+      "silent": true
+    }
+  ],
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+
+  // Prettier
+  "prettier.configPath": "C:/Users/Stefany/.config/prettier/.prettierrc",
+
+  // JavaScript
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Java
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 4
+  },
+  "redhat.telemetry.enabled": false,
+
+  // Sass
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  },
+
+  "[html]": {
+    "editor.stickyScroll.enabled": false
+  },
+
+  // Catppuccin
+  "catppuccin.accentColor": "pink",
+  "catppuccin.bracketMode": "neovim",
+  "catppuccin.workbenchMode": "flat",
+  "catppuccin.extraBordersEnabled": true,
+  "catppuccin.colorOverrides": {
+    "mocha": {
+      "text": "#F4CDE9",
+      "subtext1": "#DEBAD4",
+      "subtext0": "#C8A6BE",
+      "overlay2": "#B293A8",
+      "overlay1": "#9C7F92",
+      "overlay0": "#866C7D",
+      "surface2": "#705867",
+      "surface1": "#5A4551",
+      "surface0": "#44313B",
+      "base": "#352939",
+      "mantle": "#211924",
+      "crust": "#1a1016"
+    }
+  },
+
+  // Discord Rich Presence
+  "discord.largeImage": "Editing a {LANG} file",
+  "discord.lowerDetailsEditing": "{total_lines} Written Lines",
+  "discord.lowerDetailsIdling": "{empty}",
+  "discord.largeImageIdling": "Zzz...",
+  "discord.detailsIdling": "Chilling",
+
+  // Scrolloff
+  "scrolloff.alwaysCenter": true,
+  "scrolloff.scrolloff": 10,
+
+  // Others
+  "breadcrumbs.enabled": false,
+  "symbols.hidesExplorerArrows": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "update.mode": "manual",
+  "emmet.showSuggestionsAsSnippets": true,
+  "files.autoSave": "onFocusChange",
+  "git.openRepositoryInParentFolders": "never"
+}
