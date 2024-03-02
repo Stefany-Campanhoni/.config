@@ -4,3 +4,4 @@ Set-Alias g git
 Set-Alias grep findstr
 Set-Alias pn pnpm
 Set-Alias wrar winrar
+Set-Alias touch ni
