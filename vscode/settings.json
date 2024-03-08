@@ -28,6 +28,7 @@
   "editor.semanticHighlighting.enabled": true,
   "editor.rulers": [80, 120],
   "editor.stickyScroll.enabled": true,
+  "editor.lineNumbers": "relative",
 
   // Workbench
   "workbench.activityBar.location": "hidden",
@@ -80,7 +81,7 @@
   "apc.listRow": {
     "height": 24
   },
-  "apc.font.family": "Roboto",
+  "apc.font.family": "Roboto arial",
   "apc.stylesheet": {
     ".title-label > h2": "display: none",
     ".editor-actions": "display: none",
@@ -97,6 +98,7 @@
   "vim.leader": "<space>",
   "vim.highlightedyank.enable": true,
   "vim.useCtrlKeys": true,
+  "vim.smartRelativeLine": true,
   "vim.normalModeKeyBindings": [
     {
       "before": ["leader", "b", "d"],
@@ -104,7 +106,7 @@
       "silent": true
     },
     {
-      "before": ["leader", "b", "e"],
+      "before": ["leader", "e"],
       "commands": ["workbench.action.toggleSidebarVisibility"],
       "silent": true
     },
@@ -122,6 +124,11 @@
       "before": ["]", "b"],
       "commands": ["workbench.action.navigateBack"],
       "silent": true
+    },
+    {
+      "before": ["leader", "leader"],
+      "commands": ["workbench.action.quickOpen"],
+      "silent": true
     }
   ],
   // To improve performance
@@ -131,6 +138,11 @@
 
   // Prettier
   "prettier.configPath": "C:/Users/Stefany/.config/prettier/.prettierrc",
+
+  // Rust
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
 
   // JavaScript
   "javascript.suggest.autoImports": true,
@@ -194,3 +206,4 @@
   "files.autoSave": "onFocusChange",
   "git.openRepositoryInParentFolders": "never"
 }
+

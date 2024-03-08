@@ -2,3 +2,12 @@ scoop
 simple-update-notifier
 backup
 PowerShell/Modules
+PowerShell/Scripts
+neovim/tt.*
+neovim/.tests
+neovim/doc/tags
+neovim/debug
+neovim/.repro
+neovim/foo.*
+neovim/*.log
+neovim/data
