@@ -31,20 +31,18 @@
   "editor.lineNumbers": "relative",
 
   // Workbench
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "symbols",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "right",
-  "workbench.layoutControl.enabled": false,
 
   // Explorer
-  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.patterns": {
@@ -55,55 +53,30 @@
   },
   "explorer.fileNesting.enabled": true,
 
-  // Window
-  "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "compact",
-  "window.commandCenter": false,
-
   // Terminal
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.gpuAcceleration": "off",
 
   // Apc
-  "apc.activityBar": {
-    "position": "bottom",
-    "hideSettings": true,
-    "size": 48,
-    "itemMargin": 8,
-    "itemSize": 32
-  },
-  "apc.electron": {
-    "titleBarStyle": "hidden"
-  },
-  "apc.header": {
-    "height": 36
-  },
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.font.family": "Roboto arial",
-  "apc.stylesheet": {
-    ".title-label > h2": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".pane-header": "padding: 0 8px",
-    ".pane-body": "padding: 8px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;",
-    ".split-view-view": ""
-  },
+  "apc.font.family": "Arial",
 
   // Vim
   "vim.leader": "<space>",
   "vim.highlightedyank.enable": true,
   "vim.useCtrlKeys": true,
-  "vim.smartRelativeLine": true,
   "vim.normalModeKeyBindings": [
     {
       "before": ["leader", "b", "d"],
       "commands": [":bd"],
       "silent": true
+    },
+    {
+      "before": ["<C-y>"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<C-p>"],
+      "after": ["\"", "+", "p"]
     },
     {
       "before": ["leader", "e"],
@@ -131,13 +104,23 @@
       "silent": true
     }
   ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-y>"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<C-p>"],
+      "after": ["\"", "+", "p"]
+    }
+  ],
   // To improve performance
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
 
   // Prettier
-  "prettier.configPath": "C:/Users/Stefany/.config/prettier/.prettierrc",
+  "prettier.configPath": "C:/Users/6128440/.config/prettier/.prettierrc",
 
   // Rust
   "[rust]": {
@@ -154,10 +137,26 @@
     "editor.tabSize": 4
   },
   "redhat.telemetry.enabled": false,
+  "java.test.config": [
+    {
+      "name": "unitTest",
+      "workingDirectory": "${workspaceFolder}",
+      "args": [],
+      "vmArgs": [
+        "-XX:+EnableDynamicAgentLoading",
+        "-XX:+AllowRedefinitionToAddDeleteMethods"
+      ],
+      "env": {},
+      "preLaunchTask": "",
+      "sourcePaths": ["${workspaceFolder}/src/test/java/**/*.java"]
+    }
+  ],
 
-  // Sass
-  "[sass]": {
-    "editor.defaultFormatter": "syler.sass-indented"
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off",
+    "editor.defaultFormatter": "ms-python.python"
   },
 
   "[html]": {
@@ -167,43 +166,50 @@
   // Catppuccin
   "catppuccin.accentColor": "pink",
   "catppuccin.bracketMode": "neovim",
-  "catppuccin.workbenchMode": "flat",
-  "catppuccin.extraBordersEnabled": true,
+  "catppuccin.workbenchMode": "default",
+  "catppuccin.extraBordersEnabled": false,
   "catppuccin.colorOverrides": {
     "mocha": {
       "text": "#F4CDE9",
-      "subtext1": "#DEBAD4",
-      "subtext0": "#C8A6BE",
+      "subtext1": "#eeaedc",
+      "subtext0": "#d89ac5",
       "overlay2": "#B293A8",
       "overlay1": "#9C7F92",
       "overlay0": "#866C7D",
       "surface2": "#705867",
       "surface1": "#5A4551",
-      "surface0": "#44313B",
-      "base": "#352939",
-      "mantle": "#211924",
-      "crust": "#1a1016"
+      "surface0": "#443144",
+      "base": "#2f2030",
+      "mantle": "#261b28",
+      "crust": "#1a111b"
     }
   },
-
-  // Discord Rich Presence
-  "discord.largeImage": "Editing a {LANG} file",
-  "discord.lowerDetailsEditing": "{total_lines} Written Lines",
-  "discord.lowerDetailsIdling": "{empty}",
-  "discord.largeImageIdling": "Zzz...",
-  "discord.detailsIdling": "Chilling",
 
   // Scrolloff
   "scrolloff.alwaysCenter": true,
   "scrolloff.scrolloff": 10,
-
-  // Others
-  "breadcrumbs.enabled": false,
   "symbols.hidesExplorerArrows": false,
   "security.workspace.trust.untrustedFiles": "open",
   "update.mode": "manual",
   "emmet.showSuggestionsAsSnippets": true,
   "files.autoSave": "onFocusChange",
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "window.menuBarVisibility": "toggle",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "git.autofetch": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "C:/Program Files (x86)/Java/jdk1.8.0_202",
+      "default": true
+    }
+  ],
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "xml.symbols.maxItemsComputed": 50000
 }
-

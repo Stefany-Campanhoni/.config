@@ -11,3 +11,4 @@ neovim/.repro
 neovim/foo.*
 neovim/*.log
 neovim/data
+configstore
