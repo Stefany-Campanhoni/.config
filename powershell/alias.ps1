@@ -23,3 +23,7 @@ function http { & $env:PythonScripts\http.exe $args }
 function get { http("GET") $args }
 function put { http("PUT") $args }
 function post { http("--json POST") $args }
+
+# Youtube video downloader (yt-dlp)
+function ytdl { yt-dlp  -f bestvideo+bestaudio --merge-output-format mp4 -P "C:\Users\Stefany\Videos" $args }
+
