@@ -6,7 +6,6 @@ This repository contains my personal configuration files for various tools and a
 
 - 💻 VSCode
 - 🛠️ PowerShell
-- 🐙 Git
 - And more! 🌈
 
 Feel free to explore and use any configurations that you find useful. Don't hesitate to reach out if you have any questions or suggestions! 🌼
